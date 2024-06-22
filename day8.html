@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Hardware Workshop - Day 8</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .jumbotron {
+            background: linear-gradient(to right, #8C1414, #ff0000);
+            color: white;
+        }
+
+        .content-section {
+            margin: 20px 0;
+        }
+
+        .footer {
+            background-color: #8C1414;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+
+        .quiz {
+            margin: 20px 0;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        .navbar-custom {
+            background-color: #8C1414;
+        }
+
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-nav .nav-link {
+            color: white;
+        }
+
+        .navbar-custom .navbar-nav .nav-link:hover {
+            color: #ff0000; /* blood red */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <a class="navbar-brand" href="#">Workshop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="./day1.html">Day 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day2.html">Day 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day3.html">Day 3</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day4.html">Day 4</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day5.html">Day 5</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day6.html">Day 6</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day7.html">Day 7</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day8.html">Day 8</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day9.html">Day 9</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day10.html">Day 10</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Advanced Networking Concepts</h1>
+        <p class="lead">Delve into more complex networking topics.</p>
+    </div>
+
+    <div class="container">
+        <!-- Day 8 Section -->
+        <section id="day8">
+            <div class="content-section" data-aos="fade-up">
+                <h3>Goals:</h3>
+                <ul>
+                    <li>Delve into more complex networking topics.</li>
+                    <li>Understand the workings of advanced network systems.</li>
+                </ul>
+            </div>
+            <div class="content-section" data-aos="fade-up" data-aos-delay="100">
+                <h3>Motives:</h3>
+                <p>To provide a deeper understanding of networking for interested students.</p>
+            </div>
+            <div class="content-section" data-aos="fade-up" data-aos-delay="200">
+                <h3>Detailed Information:</h3>
+                <p>Network Topologies: In network architecture, a topology refers to the layout of connected devices. Common topologies include:</p>
+                <ul>
+                    <li>Star: All nodes are connected to a central hub.</li><br>
+                    <img src="./images/star.png" alt="Network Topologies" width="400px" height="400px"><br>
+                    <li>Bus: All nodes are connected to a single backbone cable.</li><br>
+                    <img src="./images/bus.png" alt="Network Topologies" width="400px" height="400px"><br>
+                    <li>Ring: Each node is connected to two other nodes, forming a ring.</li><br>
+                    <img src="./images/ring.jpg" alt="Network Topologies" width="400px" height="400px"><br>
+                    <li>Mesh: Every node is connected to every other node.</li><br>
+                    <img src="./images/mesh.jpg" alt="Network Topologies" width="400px" height="400px"><br>
+                </ul>
+                <p>Protocols and Standards: These are rules and guidelines that define how data is transmitted over networks. Common protocols and standards include:</p>
+                <ul>
+                    <li>TCP/IP: Transmission Control Protocol/Internet Protocol, the foundational protocols of the Internet.</li>
+                    <img src="./images/tcpip.png" alt="Network Topologies" width="400px" height="400px"><br>
+                    <li>HTTP/HTTPS: HyperText Transfer Protocol/Secure, used for transmitting web pages and data over the Internet.</li>
+                    <img src="./images/http.jpg" alt="Network Topologies" width="400px" height="400px"><br>
+                    <li>FTP: File Transfer Protocol, for transferring files between computers on a network.</li>
+                    <img src="./images/ftp.png" alt="Network Topologies" width="400px" height="400px"><br>
+                </ul>
+                <p>Wireless Networking: This involves the use of wireless technologies to connect devices to a network. Key aspects include:</p>
+                <ul>
+                    <li>Wi-Fi Standards: Different standards like 802.11n, 802.11ac, and 802.11ax define wireless networking capabilities.</li>
+                    <li>Setup: Configuring wireless routers and access points to create wireless networks.</li>
+                    <li>Security: Implementing encryption and authentication mechanisms to secure wireless networks.</li>
+                </ul>
+            </div>
+            <div class="content-section" data-aos="fade-up" data-aos-delay="300">
+                <h3>Activity:</h3>
+                <p>Network Simulation: Use network simulation software to design and analyze different network topologies. Students can experiment with various configurations and observe how they affect network performance.</p>
+            </div>
+            <div class="content-section quiz" data-aos="fade-up" data-aos-delay="400">
+                <h3>Quiz:</h3>
+                <div class="question">
+                    <p>Name one type of network topology.</p>
+                </div>
+                <div class="question">
+                    <p>What does HTTP stand for?</p>
+                </div>
+                <div class="question">
+                    <p>What is the main advantage of wireless networking?</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <span>&copy; 2024 Computer Hardware Workshop. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const translatableElements = document.querySelectorAll('[data-translate]');
+
+            translatableElements.forEach(element => {
+                const originalText = element.innerText;
+                const translatedText = element.getAttribute('data-translate');
+
+                element.addEventListener('mouseover', function () {
+                    element.innerText = translatedText;
+                    element.classList.add('translated');
+                });
+
+                element.addEventListener('mouseout', function () {
+                    element.innerText = originalText;
+                    element.classList.remove('translated');
+                });
+
+                element.addEventListener('click', function () {
+                    const isTranslated = element.classList.toggle('translated');
+                    element.innerText = isTranslated ? translatedText : originalText;
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
+

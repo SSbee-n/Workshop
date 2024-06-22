@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inside of a computer - Day 3</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .jumbotron {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            margin-bottom: 0;
+            padding: 2rem 1rem;
+        }
+
+        .content-section {
+            margin: 20px 0;
+        }
+
+        .footer {
+            background-color: #6a11cb;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+
+        .quiz {
+            margin: 20px 0;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        .translated {
+            background-color: #dff0d8;
+        }
+
+        .image {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .image-caption {
+            font-style: italic;
+            color: #666;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 50px;
+            background: #f1f1f1;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: hotpink;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: hotpink;
+            font-size: 2em;
+        }
+
+        .section p {
+            font-size: 1.2em;
+        }
+
+        .activity, .quiz {
+            background: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .activity h3, .quiz h3 {
+            font-size: 1.5em;
+            color: hotpink;
+        }
+
+        .quiz img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Workshop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="./day1.html">Day 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day2.html">Day 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day3.html">Day 3</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day4.html">Day 4</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day5.html">Day 5</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day6.html">Day 6</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day7.html">Day 7</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day8.html">Day 8</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day9.html">Day 9</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day10.html">Day 10</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Computer Hardware Workshop - Day 8</h1>
+        <p class="lead">A Comprehensive Introduction to Computer Hardware</p>
+    </div>
+
+    <main>
+        <div class="container">
+            <div class="header">
+                <h1>Day 8: Input and Output Devices</h1>
+            </div>
+            <div class="content">
+                <section class="section">
+                    <h2>Goals:</h2>
+                    <ul>
+                        <li>Identify various input and output devices.</li>
+                        <li>Understand the role of these devices in a computer system.</li>
+                    </ul>
+                </section>
+
+                <section class="section">
+                    <h2>Input Devices:</h2>
+                    <p>Input devices are peripherals used to provide data and control signals to a computer. Examples include:</p>
+                    <ul>
+                        <li><strong>Keyboard:</strong> Used to input text and commands.</li>
+                        <li><strong>Mouse:</strong> A pointing device that detects two-dimensional motion.</li>
+                        <li><strong>Scanner:</strong> Converts physical documents into digital format.</li>
+                        <li><strong>Microphone:</strong> Captures audio input.</li>
+                        <li><strong>Webcam:</strong> Captures video input.</li>
+                        <li><strong>Joystick:</strong> Used for gaming and simulations.</li>
+                    </ul>
+                    <div class="image">
+                        <img src="./images/keyboard.jpeg" alt="Input Devices" class="img-fluid">
+                        <img src="./images/mouse.jpeg" alt="Input Devices" class="img-fluid">
+                        <div class="image-caption">Examples of Input Devices</div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>Output Devices:</h2>
+                    <p>Output devices receive data from a computer and translate it into a form understandable by humans. Examples include:</p>
+                    <ul>
+                        <li><strong>Monitor:</strong> Displays visual output from the computer.</li>
+                        <li><strong>Printer:</strong> Produces a hard copy of digital documents.</li>
+                        <li><strong>Speakers:</strong> Output audio signals as sound.</li>
+                        <li><strong>Headphones:</strong> Personal audio output device.</li>
+                        <li><strong>Projector:</strong> Projects visual output onto a surface.</li>
+                    </ul>
+                    <div class="image">
+                        <img src="./images/monitor.jpeg" alt="Output Devices" class="img-fluid">
+                        <img src="./images/printer.png" alt="Input Devices" class="img-fluid">
+                        <div class="image-caption">Examples of Output Devices</div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>What's Inside a Computer Case:</h2>
+                    <p>The internal components of a computer case include:</p>
+                    <ul>
+                        <li><strong>CPU (Central Processing Unit):</strong> The brain of the computer, responsible for executing instructions.</li>
+                        <li><strong>Motherboard:</strong> The main circuit board that connects all components and peripherals.</li>
+                        <li><strong>RAM (Random Access Memory):</strong> Volatile memory used to store data for currently running programs.</li>
+                        <li><strong>PSU (Power Supply Unit):</strong> Converts electrical power from an outlet to usable power for the computer's components.</li>
+                        <li><strong>HDD/SSD (Hard Disk Drive/Solid State Drive):</strong> Non-volatile storage devices for the computer's operating system, software, and data.</li>
+                        <li><strong>GPU (Graphics Processing Unit):</strong> Specialized processor for rendering graphics.</li>
+                        <li><strong>Cooling Systems:</strong> Fans and heat sinks used to dissipate heat from components.</li>
+                        <li><strong>PCIe Slots:</strong> Expansion slots for additional cards like graphics cards, network cards, etc.</li>
+                        <li><strong>SATA Connections:</strong> Interfaces for connecting storage devices and optical drives.</li>
+                        <li><strong>Power Connectors:</strong> Provide power to the motherboard, CPU, and other components.</li>
+                    </ul>
+                    <div class="image">
+                        <img src="./images/insidecc.png" alt="Inside Computer Case" class="img-fluid">
+                        <div class="image-caption">Inside a Computer Case</div>
+                    </div>
+                </section>
+
+                <section class="section activity">
+                    <h2>Activity: Assembling and Disassembling a Computer</h2>
+                    <p>Guide students through the process of safely assembling and disassembling a computer to understand how components fit and work together.</p>
+                </section>
+
+                <section class="section quiz">
+                    <h2>Quiz</h2>
+                    <div class="question">
+                        <h3>1. What is the main function of the CPU in a computer?</h3>
+                        <ul>
+                            <li><input type="radio" name="q1"> A. To store data</li>
+                            <li><input type="radio" name="q1"> B. To execute instructions</li>
+                            <li><input type="radio" name="q1"> C. To provide power</li>
+                            <li><input type="radio" name="q1"> D. To cool the computer</li>
+                        </ul>
+                    </div>
+                    <div class="question">
+                        <h3>2. Which device is used to capture audio input?</h3>
+                        <ul>
+                            <li><input type="radio" name="q2"> A. Monitor</li>
+                            <li><input type="radio" name="q2"> B. Keyboard</li>
+                            <li><input type="radio" name="q2"> C. Microphone</li>
+                            <li><input type="radio" name="q2"> D. Printer</li>
+                        </ul>
+                    </div>
+                    <div class="question">
+                        <h3>3. Name two types of storage devices found inside a computer.</h3>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer text-center">
+        <p>&copy; 2024 QBasic Workshop. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

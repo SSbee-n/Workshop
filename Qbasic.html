@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Programming Language Overview and Features</title>
+    <style>
+        /* CSS for navbar */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* CSS for footer */
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* CSS for images */
+        .image-container {
+            max-width: 100%;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar">
+            <a href="day1.html">Day 1</a>
+            <a href="day2.html">Day 2</a>
+            <a href="day3.html">Day 3</a>
+            <a href="day4.html">Day 4</a>
+            <a href="day5.html">Day 5</a>
+            <a href="day6.html">Day 6</a>
+            <a href="day7.html">Day 7</a>
+            <a href="day8.html">Day 8</a>
+            <a href="day9.html">Day 9</a>
+            <a href="day10.html">Day 10</a>
+        </div>
+    </div>
+
+    <h1>Introduction to C Language</h1>
+    <p>C is a structured programming language developed by Dennis Ritchie in 1972 at Bell Telephone Laboratories to support the UNIX operating system. It evolved from the B language and is considered a middle-level language due to its ability to combine low-level hardware access with high-level programming constructs. C is widely used for system software and application development.</p>
+
+    <!-- Implementation -->
+    <h2>Implementation of C Language</h2>
+    <ul>
+        <li>Used to develop Operating Systems e.g., UNIX.</li>
+        <li>Developing new programming platforms such as C++, C# (C++ is used in Blockchain Technology (Bitcoin, Ethereum, etc.).</li>
+        <li>Development of popular web browsers such as Mozilla Firefox, Thunderbird, etc.</li>
+        <li>Development of various GUIs (Graphical User Interface) and IDEs (Integrated Development Environments).</li>
+        <li>Popular Database Management System (DBMS) like MySQL was developed using C.</li>
+    </ul>
+
+    <!-- Features -->
+    <h2>Features of C Language</h2>
+    <ul>
+        <li>Structured Language: Supports modular programming.</li>
+        <li>Modular Programming: Big programs can be reduced into simpler small program blocks called modules.</li>
+        <li>Supports graphics.</li>
+        <li>Huge library functions.</li>
+        <li>Case-sensitive language.</li>
+    </ul>
+
+    <!-- Data Types -->
+    <h2>Data Types in C</h2>
+    <table>
+        <tr>
+            <th>Data Type</th>
+            <th>Used For</th>
+            <th>Format Specifier</th>
+        </tr>
+        <tr>
+            <td>int</td>
+            <td>Non-decimal numbers</td>
+            <td>%d</td>
+        </tr>
+        <tr>
+            <td>float</td>
+            <td>Decimal numbers</td>
+            <td>%f</td>
+        </tr>
+        <tr>
+            <td>char</td>
+            <td>String</td>
+            <td>%s or %c</td>
+        </tr>
+    </table>
+
+    <!-- Variables -->
+    <h2>Variables in C</h2>
+    <ul>
+        <li>Variable name should not start with a number.</li>
+        <li>Variable name should not have blank space.</li>
+        <li>Keywords cannot be used as variable names.</li>
+        <li>Uppercase variable names are different from lowercase variable names.</li>
+    </ul>
+
+    <!-- Operators -->
+    <h2>Operators in C</h2>
+    <ul>
+        <li>Arithmetic operators: +, -, *, /, %</li>
+        <li>Relational operators: >, <, >=, <=, !=, ==</li>
+        <li>Assignment operator: =</li>
+        <li>Logical operators: &&, ||, !</li>
+    </ul>
+
+    <!-- Header Files -->
+    <h2>Header Files in C</h2>
+    <ul>
+        <li>#include for standard input output function e.g., printf, scanf, etc.</li>
+        <li>#include for mathematical function e.g., pow, sin, cos, etc.</li>
+        <li>#include for graphical elements e.g., circle, rectangle, line, etc.</li>
+        <li>#include for string handling functions e.g., strcpy(), strlen(), strupr(), etc.</li>
+    </ul>
+
+    <!-- Program Structure -->
+    <h2>Sample Structure of C Program</h2>
+    <pre>
+        <code>
+            #include&lt;stdio.h&gt;
+            void main ()
+            {
+                // block of statements
+                getch ();
+            }
+        </code>
+    </pre>
+    <p>Explanation: C program always executes from top left to bottom right, so program execution starts from the header file which is followed by the main() function.</p>
+
+    <!-- Examples -->
+    <h2>Important C Program Examples</h2>
+    <p>Below are some important C program examples:</p>
+
+    <pre>
+        <code>
+            // WAP to calculate the area of a rectangle in C. [Hints: a = l x b]
+
+            #include&lt;stdio.h&gt; 
+            void main()
+            {
+                int l, b, a;
+                printf ("Enter Length: ");
+                scanf ("%d", &l);
+                printf ("Enter Breadth: ");
+                scanf ("%d", &b);
+                a = l * b;
+                printf ("The area is %d", a);
+                getch();
+            }
+        </code>
+    </pre>
+
+    <pre>
+        <code>
+            //WAP to calculate the simple interest in C. [Hints: i= (ptr)/100]
+
+            #include&lt;stdio.h&gt; 
+            int main()
+            {
+                float p, t, r, i;
+                printf ("Enter principal time and rate: ");
+                scanf ("%f %f %f", &p, &t, &r);
+                i= (p*t*r)/100;
+                printf ("The interest is %f", i);
+                return 0;
+            }
+        </code>
+    </pre>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 C Programming Language Overview and Features</p>
+    </div>
+</body>
+</html>
+

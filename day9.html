@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 9: POP vs OOP</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1c1c1c;
+            color: #ffd700;
+        }
+
+        .navbar, .footer {
+            background-color: #333;
+        }
+
+        .navbar-brand, .nav-link, .footer {
+            color: #ffd700;
+        }
+
+        .jumbotron {
+            background: linear-gradient(to right, #1c1c1c, #333);
+            color: #ffd700;
+        }
+
+        .content-section {
+            margin: 20px 0;
+        }
+
+        .footer {
+            padding: 10px 0;
+        }
+
+        .card {
+            background-color: #333;
+            color: #ffd700;
+            border: 1px solid #ffd700;
+            margin-bottom: 20px;
+        }
+
+        .quiz {
+            margin: 20px 0;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        .translated {
+            background-color: #dff0d8;
+        }
+
+        .nav-link:hover {
+            color: #fff;
+        }
+
+        
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Workshop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="./day1.html">Day 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day2.html">Day 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day3.html">Day 3</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day4.html">Day 4</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day5.html">Day 5</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day6.html">Day 6</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day7.html">Day 7</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day8.html">Day 8</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day9.html">Day 9</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day10.html">Day 10</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+        <h1 class="display-4" id="title" data-translate="कम्प्युटर हार्डवेयर र सफ्टवेयर कार्यशाला">Computer Hardware and Software Workshop</h1>
+        <p class="lead" id="subtitle" data-translate="कक्षा ६-१२ का विद्यार्थीहरूका लागि कार्यशाला">A Workshop for Students from Class 6-12</p>
+    </div>
+
+    <div class="container">
+        <!-- Day 8 Section -->
+        <section id="day8">
+            <h2 class="text-center my-5" data-translate="आठौं दिन: प्रक्रियात्मक र वस्तुमुखी प्रोग्रामिंग">Day 8: Procedural vs Object-Oriented Programming</h2>
+            <div class="content-section" data-aos="fade-up">
+                <div class="img-placeholder"><img src="./images/pop.png" alt=""></div>
+                <h3 data-translate="प्रक्रियात्मक अभिमुख प्रोग्रामिंग (POP)">Procedural Oriented Programming (POP)</h3>
+                <h4 data-translate="मुख्य विशेषताहरू:">Main Features:</h4>
+                <ul>
+                    <li data-translate="कार्यहरू / प्रक्रियाहरू आधारित">Procedure/Function-based: The focus is on functions or procedures that operate on data.</li>
+                    <li data-translate="कार्यहरूको अनुक्रम">Sequence of Tasks: Programs are structured as a sequence of tasks or instructions.</li>
+                    <li data-translate="वैश्विक डाटा">Global Data: Data is often shared across functions using global variables.</li>
+                    <li data-translate="मोड्युलरिटी">Modularity: Code is divided into procedures or functions, which can be reused.</li>
+                    <li data-translate="शीर्ष-तल दृष्टिकोण">Top-down Approach: Design starts with the high-level logic and then breaks down into smaller, more detailed procedures.</li>
+                </ul>
+            </div>
+            <div class="content-section" data-aos="fade-up" data-aos-delay="100">
+                <div class="img-placeholder"><img src="./images/bus.png" alt=""></div>
+                <h4 data-translate="फाइदाहरू:">Advantages:</h4>
+                <ul>
+                    <li data-translate="सरलता">Simplicity: Easy to understand and implement, especially for straightforward tasks.</li>
+                    <li data-translate="सानो कार्यक्रमहरूका लागि कुशल">Efficient for Small Programs: Works well for small-scale applications where complex data relationships are not required.</li>
+                    <li data-translate="कम ओभरहेड">Less Overhead: Typically, has less runtime overhead compared to OOP.</li>
+                    <li data-translate="डिबगिंग र परीक्षणको सजिलो">Ease of Debugging and Testing: Testing and debugging individual functions is straightforward.</li>
+                </ul>
+            </div>
+            <div class="content-section" data-aos="fade-up" data-aos-delay="200">
+                <div class="img-placeholder"><img src="./images/disadv.png" alt=""></div>
+                <h4 data-translate="हानिहरू:">Disadvantages:</h4>
+                <ul>
+                    <li data-translate="खराब स्केलेबिलिटी">Poor Scalability: Becomes difficult to manage and extend for larger applications.</li>
+                    <li data-translate="वैश्विक डाटा निर्भरता">Global Data Dependency: Heavy reliance on global data can lead to issues with data integrity and concurrency.</li>
+                    <li data-translate="पुन: प्रयोगशीलता समस्या">Reusability Issues: Functions are less reusable since they often depend on global data.</li>
+                    <li data-translate="कोड डुप्लिकेसन">Code Duplication: Can lead to duplicate code as procedures are often written to handle specific tasks rather than generalized for reuse.</li>
+                </ul>
+            </div>
+            <div class="content-section" data-aos="fade-up" data-aos-delay="300">
+                <div class="img-placeholder"><img src="./images/oopp.png" alt=""></div>
+                <h3 data-translate="वस्तुमुखी प्रोग्रामिंग (OOP)">Object-Oriented Programming (OOP)</h3>
+                <h4 data-translate="मुख्य विशेषताहरू:">Main Features:</h4>
+                <ul>
+                    <li data-translate="वस्तुहरू र कक्षाहरू">Objects and Classes: Central concepts are objects (instances of classes) which encapsulate data and behavior.</li>
+                    <li data-translate="सम्पुटन">Encapsulation: Data and methods that operate on data are bundled together.</li>
+                    <li data-translate="उत्तराधिकार">Inheritance: Allows the creation of new classes based on existing ones, promoting code reuse.</li>
+                    <li data-translate="बहुरूपता">Polymorphism: Enables methods to operate differently based on the object they are acting on.</li>
+                    <li data-translate="अमूर्तता">Abstraction: Hides complex implementation details and shows only the necessary features.</li>
+                </ul>
+            </div>
+            <div class="content-section" data-aos="fade-up" data-aos-delay="400">
+                <div class="img-placeholder"><img src="./images/advan.jpg" alt=""></div>
+                <h4 data-translate="फाइदाहरू:">Advantages:</h4>
+                <ul>
+                    <li data-translate="मोड्युलारिटी">Modularity: Code is organized into discrete, self-contained units (objects).</li>
+                    <li data-translate="पुन: प्रयोगशीलता">Reusability: Classes can be reused across different programs and projects.</li>
+                    <li data-translate="स्केलेबिलिटी">Scalability: More manageable for large-scale applications.</li>
+                    <li data-translate="मेन्टेनेबिलिटी">Maintainability: Easier to maintain and modify due to the modularity and encapsulation.</li>
+                    <li data-translate="वास्तविक-विश्व मोडेलिङ">Real-world Modeling: Provides a closer representation of real-world entities and relationships.</li>
+                </ul>
+            </div>
+            <div class="content-section" data-aos="fade-up" data-aos-delay="500">
+                <div class="img-placeholder"><img src="./images/disadv.png" alt=""></div>
+                <h4 data-translate="हानिहरू:">Disadvantages:</h4>
+                <ul>
+                    <li data-translate="जटिलता">Complexity: Can be more complex to design and implement, especially for simple applications.</li>
+                    <li data-translate="प्रदर्शन ओभरहेड">Performance Overhead: May have more overhead due to features like inheritance and dynamic binding.</li>
+                    <li data-translate="शिक्षण वक्र">Learning Curve: Steeper learning curve compared to procedural programming.</li>
+                    <li data-translate="अत्यधिक इन्जिनियरिङ">Over-engineering: Tendency to create overly complex class hierarchies.</li>
+                </ul>
+            </div>
+            <div class="content-section" data-aos="fade-up" data-aos-delay="600">
+                <div class="img-placeholder"><img src="./images/oop.jpeg" alt=""></div>
+                <h4 data-translate="POP र OOP बीचका प्रमुख भिन्नताहरू:">Key Differences Between POP and OOP:</h4>
+                <table class="table table-dark table-bordered">
+                    <thead>
+                        <tr>
+                            <th data-translate="पक्ष">Aspect</th>
+                            <th data-translate="प्रक्रियात्मक अभिमुख प्रोग्रामिंग (POP)">Procedural Oriented Programming (POP)</th>
+                            <th data-translate="वस्तुमुखी प्रोग्रामिंग (OOP)">Object-Oriented Programming (OOP)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-translate="संरचना">Structure</td>
+                            <td data-translate="कार्यहरू / प्रक्रियाहरू आधारित">Function/Procedure-based</td>
+                            <td data-translate="कक्षा / वस्तु आधारित">Class/Object-based</td>
+                        </tr>
+                        <tr>
+                            <td data-translate="डाटा ह्यान्डलिङ">Data Handling</td>
+                            <td data-translate="फङ्सनहरूमा साझा गरिने वैश्विक डाटा">Global data shared across functions</td>
+                            <td data-translate="वस्तुहरू भित्र डाटा आवरण गरिएको">Data encapsulated within objects</td>
+                        </tr>
+                        <tr>
+                            <td data-translate="दृष्टिकोण">Approach</td>
+                            <td data-translate="शीर्ष-तल">Top-down</td>
+                            <td data-translate="तल-माथि">Bottom-up</td>
+                        </tr>
+                        <tr>
+                            <td data-translate="मोड्युलारिटी">Modularity</td>
+                            <td data-translate="कार्यहरूमा कार्यक्रमहरू विभाजन गर्दछ">Divides programs into functions</td>
+                            <td data-translate="वस्तुहरूमा कार्यक्रमहरू विभाजन गर्दछ">Divides programs into objects</td>
+                        </tr>
+                        <tr>
+                            <td data-translate="पुन: प्रयोगशीलता">Reusability</td>
+                            <td data-translate="सीमित कार्य पुन: प्रयोग">Limited function reuse</td>
+                            <td data-translate="उत्तराधिकार र बहुरूपता कारण उच्च">High due to inheritance and polymorphism</td>
+                        </tr>
+                        <tr>
+                            <td data-translate="जटिलता">Complexity</td>
+                            <td data-translate="सानो कार्यहरूका लागि सरल">Simpler for small tasks</td>
+                            <td data-translate="जटिल, ठूला-स्तर प्रणालीहरूको लागि राम्रो">Better for complex, large-scale systems</td>
+                        </tr>
+                        <tr>
+                            <td data-translate="सम्पुटन">Encapsulation</td>
+                            <td data-translate="प्रत्यक्ष अवधारणा छैन">No direct concept</td>
+                            <td data-translate="मुख्य अवधारणा">Core concept</td>
+                        </tr>
+                        <tr>
+                            <td data-translate="उत्तराधिकार र बहुरूपता">Inheritance and Polymorphism</td>
+                            <td data-translate="निहित छैन">Not inherent</td>
+                            <td data-translate="मुख्य विशेषताहरू">Key features</td>
+                        </tr>
+                        <tr>
+                            <td data-translate="अमूर्तता">Abstraction</td>
+                            <td data-translate="सीमित">Limited</td>
+                            <td data-translate="विस्तृत">Extensive</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <span>&copy; 2024 कम्प्युटर हार्डवेयर र सफ्टवेयर कार्यशाला। सबै अधिकार सुरक्षित।</span>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const translatableElements = document.querySelectorAll('[data-translate]');
+
+            translatableElements.forEach(element => {
+                const originalText = element.innerText;
+                const translatedText = element.getAttribute('data-translate');
+
+                element.addEventListener('mouseover', function() {
+                    element.innerText = translatedText;
+                    element.classList.add('translated');
+                });
+
+                element.addEventListener('mouseout', function() {
+                    element.innerText = originalText;
+                    element.classList.remove('translated');
+                });
+
+                element.addEventListener('click', function() {
+                    const isTranslated = element.classList.toggle('translated');
+                    element.innerText = isTranslated ? translatedText : originalText;
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

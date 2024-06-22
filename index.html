@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Hardware & Networking Workshop</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .jumbotron {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+        }
+
+        .day-card {
+            transition: transform 0.3s;
+        }
+
+        .day-card:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            background-color: #6a11cb;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .day-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .day-list li {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .day-list img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Computer Hardware & Networking Workshop</h1>
+        <p class="lead">A Comprehensive 7-10 Day Program for Students of Class 6-12</p>
+        <a class="btn btn-primary btn-lg" href="#schedule" role="button">Explore the Schedule</a>
+    </div>
+
+    <div class="container" id="schedule">
+        <h2 class="text-center my-5">Workshop Schedule</h2>
+        <ul class="day-list">
+            <a href="./day1.html"><li data-aos="fade-up">
+                <img src="./images/day1.png" alt="Day 1 Image">
+                <h5>Day 1: Introduction to Computer Hardware</h5>
+                <p>Learn the basics of computer hardware components and their functions.</p>
+            </li></a>
+            <a href="./day2.html">
+                <li data-aos="fade-up" data-aos-delay="100">
+                    <img src="./images/day2.jpg" alt="Day 2 Image">
+                    <h5>Day 2: Storage Devices and Memory</h5>
+                    <p>Understand different types of storage devices and the differences between RAM and permanent storage.</p>
+                </li>
+            </a>
+            <a href="./day3.html">
+                <li data-aos="fade-up" data-aos-delay="200">
+                    <img src="./images/day3.jpg" alt="Day 3 Image">
+                    <h5>Day 3: Input and Output Devices, Inside of a computer</h5>
+                    <p>Identify various input and output devices and their roles in a computer system.
+                        Learn how to assemble/disassemble a computer and understand the internal layout.
+                    </p>
+                </li>
+            </a>
+           <a href="./day4.html"><li data-aos="fade-up" data-aos-delay="300">
+            <img src="./images/day4.png" alt="Day 4 Image">
+            <h5>Day 4: Contemporary Technologies</h5>
+            <p></p>
+        </li></a>
+            <a href="./day5.html">
+                <li data-aos="fade-up" data-aos-delay="400">
+                    <img src="./images/day5.jpg" alt="Day 5 Image">
+                    <h5>Day 5: Network Systems Basics</h5>
+                    <p>Understand the basics of networking and learn about different types of networks.</p>
+                </li>
+            </a>
+            <a href="./day6.html">
+                <li data-aos="fade-up" data-aos-delay="500">
+                    <img src="./images/day6.png" alt="Day 6 Image">
+                    <h5>Day 6: Introduction to Internet and Web Technologies</h5>
+                    <p>Learn how the internet works and understand basic web technologies.</p>
+                </li>
+            </a>
+            <a href="./day7.html">
+                <li data-aos="fade-up" data-aos-delay="600">
+                    <img src="./images/day7.png" alt="Day 7 Image">
+                    <h5>Day 7: Introduction to Network Security</h5>
+                    <p>Understand the basics of network security and learn about common threats and protection methods.</p>
+                </li>
+            </a>
+            <a href="./day8.html">
+                <li data-aos="fade-up" data-aos-delay="700">
+                    <img src="./images/day8.jpg" alt="Day 8 Image">
+                    <h5>Day 8: Advanced Networking Concepts</h5>
+                    <p>Explore more complex networking topics and understand advanced network systems.</p>
+                </li>
+            </a>
+            <a href="./day9.html">
+                <li data-aos="fade-up" data-aos-delay="800">
+                    <img src="./images/day9.jpg" alt="Day 9 Image">
+                    <h5> Day 9: POP vs OOP</h5>
+                    <p>Learn the working of a seven-segment display and how to interface it with a computer or microcontroller.</p>
+                </li>
+            </a>
+            <a href="./day10.html">
+                <li data-aos="fade-up" data-aos-delay="900">
+                    <img src="./images/day10.jpeg" alt="Day 10 Image">
+                    <h5>Day 10: Review and Project Presentation</h5>
+                    <p>Review all topics covered and present individual or group projects based on what was learned.</p>
+                </li>
+            </a>
+           
+        </ul>
+    </div>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <span>&copy; 2024 Computer Hardware & Networking Workshop. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

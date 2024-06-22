@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QBasic Workshop Day 8</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .content {
+            padding: 20px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        h2 {
+            color: #333;
+        }
+        code {
+            background-color: #f4f4f4;
+            display: block;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#introduction">Introduction</a>
+        <a href="#loops">Basic Loops</a>
+        <a href="#conditionals">Conditional Operators</a>
+        <a href="#operators">All Operators</a>
+        <a href="#structures">Structures</a>
+        <a href="#keywords">Keywords</a>
+        <a href="#variables">Characters & Variables</a>
+        <a href="#file-handling">File Handling</a>
+    </div>
+
+    <div class="content">
+        <section id="introduction">
+            <h2>Introduction to QBasic</h2>
+            <p>QBasic is a simple programming language developed by Microsoft in the late 1980s. It is designed for beginners to learn the basics of programming.</p>
+        </section>
+
+        <section id="loops">
+            <h2>Basic Loops</h2>
+            <h3>FOR...NEXT Loop:</h3>
+            <code>
+FOR i = 1 TO 10<br>
+&nbsp;&nbsp;&nbsp;&nbsp;PRINT i<br>
+NEXT i
+            </code>
+            <h3>WHILE...WEND Loop:</h3>
+            <code>
+i = 1<br>
+WHILE i &lt;= 10<br>
+&nbsp;&nbsp;&nbsp;&nbsp;PRINT i<br>
+&nbsp;&nbsp;&nbsp;&nbsp;i = i + 1<br>
+WEND
+            </code>
+            <h3>DO...LOOP:</h3>
+            <code>
+i = 1<br>
+DO<br>
+&nbsp;&nbsp;&nbsp;&nbsp;PRINT i<br>
+&nbsp;&nbsp;&nbsp;&nbsp;i = i + 1<br>
+LOOP WHILE i &lt;= 10
+            </code>
+        </section>
+
+        <section id="conditionals">
+            <h2>Conditional Operators</h2>
+            <h3>IF...THEN...ELSE:</h3>
+            <code>
+age = 20<br>
+IF age &gt;= 18 THEN<br>
+&nbsp;&nbsp;&nbsp;&nbsp;PRINT "You are an adult."<br>
+ELSE<br>
+&nbsp;&nbsp;&nbsp;&nbsp;PRINT "You are a minor."<br>
+END IF
+            </code>
+            <h3>SELECT CASE:</h3>
+            <code>
+grade = "A"<br>
+SELECT CASE grade<br>
+&nbsp;&nbsp;&nbsp;&nbsp;CASE "A"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRINT "Excellent!"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;CASE "B"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRINT "Good job!"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;CASE "C"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRINT "Well done!"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;CASE ELSE<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRINT "Try harder!"<br>
+END SELECT
+            </code>
+        </section>
+
+        <section id="operators">
+            <h2>All Operators</h2>
+            <h3>Arithmetic Operators:</h3>
+            <ul>
+                <li>+ : Addition</li>
+                <li>- : Subtraction</li>
+                <li>* : Multiplication</li>
+                <li>/ : Division</li>
+                <li>^ : Exponentiation</li>
+                <li>MOD : Modulus (remainder)</li>
+            </ul>
+            <h3>Relational Operators:</h3>
+            <ul>
+                <li>= : Equal to</li>
+                <li>&lt;&gt; : Not equal to</li>
+                <li>&lt; : Less than</li>
+                <li>&gt; : Greater than</li>
+                <li>&lt;= : Less than or equal to</li>
+                <li>&gt;= : Greater than or equal to</li>
+            </ul>
+            <h3>Logical Operators:</h3>
+            <ul>
+                <li>AND : Logical AND</li>
+                <li>OR : Logical OR</li>
+                <li>NOT : Logical NOT</li>
+            </ul>
+            <h3>String Operators:</h3>
+            <ul>
+                <li>+ : Concatenation (joining strings)</li>
+            </ul>
+        </section>
+
+        <section id="structures">
+            <h2>Structures</h2>
+            <h3>Program Structure:</h3>
+            <code>
+' This is a comment<br>
+PRINT "Hello, World!"
+            </code>
+            <h3>Subroutines and Functions:</h3>
+            <h4>SUB...END SUB:</h4>
+            <code>
+SUB Greet<br>
+&nbsp;&nbsp;&nbsp;&nbsp;PRINT "Hello, there!"<br>
+END SUB<br>
+<br>
+CALL Greet
+            </code>
+            <h4>FUNCTION...END FUNCTION:</h4>
+            <code>
+FUNCTION Add(a, b)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Add = a + b<br>
+END FUNCTION<br>
+<br>
+sum = Add(5, 3)<br>
+PRINT sum
+            </code>
+        </section>
+
+        <section id="keywords">
+            <h2>Keywords</h2>
+            <p>QBasic has several reserved keywords that have specific meanings:</p>
+            <ul>
+                <li>PRINT, INPUT, IF, THEN, ELSE, FOR, NEXT, WHILE, WEND, DO, LOOP</li>
+                <li>DIM (declare variables), SUB, END SUB, FUNCTION, END FUNCTION, SELECT CASE, END SELECT, CASE, CASE ELSE</li>
+                <li>GOTO, GOSUB, RETURN, END</li>
+            </ul>
+        </section>
+
+        <section id="variables">
+            <h2>Characters & Variables</h2>
+            <h3>Character Data:</h3>
+            <code>
+name$ = "John Doe"<br>
+PRINT name$
+            </code>
+            <h3>Numeric Data:</h3>
+            <code>
+age = 30<br>
+height = 5.9
+            </code>
+            <h3>Variable Naming:</h3>
+            <code>
+myVar = 10<br>
+myvar = 20  ' This will overwrite the value of myVar
+            </code>
+            <h3>DIM Statement:</h3>
+            <code>
+DIM numbers(10) AS INTEGER<br>
+DIM names$(5)
+            </code>
+        </section>
+
+        <section id="file-handling">
+            <h2>File Handling</h2>
+            <h3>Opening a File:</h3>
+            <code>
+OPEN "data.txt" FOR INPUT AS #1<br>
+OPEN "data.txt" FOR OUTPUT AS #2<br>
+OPEN "data.txt" FOR APPEND AS #3
+            </code>
+            <h3>Reading from a File:</h3>
+            <code>
+OPEN "data.txt" FOR INPUT AS #1<br>
+WHILE NOT EOF(1)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;LINE INPUT #1, line$<br>
+&nbsp;&nbsp;&nbsp;&nbsp;PRINT line$<br>
+WEND<br>
+CLOSE #1
+            </code>
+            <h3>Writing to a File:</h3>
+            <code>
+OPEN "data.txt" FOR OUTPUT AS #1<br>
+PRINT #1, "Hello, World!"<br>
+CLOSE #1
+            </code>
+            <h3>Appending to a File:</h3>
+            <code>
+OPEN "data.txt" FOR APPEND AS #1<br>
+PRINT #1, "Additional line of text."<br>
+CLOSE #1
+            </code>
+        </section>
+    </div>
+
+    <div class="footer">
+        <p>QBasic Workshop &copy; 2024</p>
+    </div>
+</body>
+</html>

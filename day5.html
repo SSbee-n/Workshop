@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Hardware Workshop - Day 5</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .jumbotron {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+        }
+
+        .content-section {
+            margin: 20px 0;
+        }
+
+        .footer {
+            background-color: #6a11cb;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+
+        .quiz {
+            margin: 20px 0;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        .translated {
+            background-color: #dff0d8;
+        }
+
+        .image {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        
+
+
+        .image-caption {
+            font-style: italic;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Workshop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="./day1.html">Day 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day2.html">Day 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day3.html">Day 3</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day4.html">Day 4</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day5.html">Day 5</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day6.html">Day 6</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day6.html">Day 7</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day8.html">Day 8</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day9.html">Day 9</a></li>
+                <li class="nav-item"><a class="nav-link" href="./day10.html">Day 10</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+        <h1 class="display-4" id="title" data-translate="कम्प्युटर हार्डवेयर कार्यशाला">Computer Hardware Workshop</h1>
+        <p class="lead" id="subtitle" data-translate="कक्षा ६-१२ का विद्यार्थीहरूका लागि कम्प्युटर हार्डवेयरको परिचय">A Comprehensive Introduction to Computer Hardware for Class 6-12 Students</p>
+    </div>
+
+    <div class="container">
+        <!-- Day 5 Section -->
+        <section id="day5">
+            <h2 class="text-center my-5" data-translate="पाँचौं दिन: नेटवर्क प्रणालीको आधारभूत ज्ञान">Day 5: Network Systems Basics</h2>
+            <div class="content-section" data-aos="fade-up">
+                <h3 data-translate="लक्ष्यहरू:">Goals:</h3>
+                <ul>
+                    <li data-translate="नेटवर्किङको आधारभूत ज्ञान बुझ्नुहोस्।">Understand the basics of networking.</li>
+                    <li data-translate="विभिन्न प्रकारका नेटवर्कहरू र तिनीहरूका कम्पोनेन्टहरूबारे जान्नुहोस्।">Learn about different types of networks and their components.</li>
+                </ul>
+            </div>
+            <div class="content-section" data-aos="fade-up" data-aos-delay="100">
+                <h3 data-translate="प्रेरणाहरू:">Motives:</h3>
+                <ul>
+                    <li data-translate="कम्प्युटरहरू एक अर्कासँग कसरी सञ्चार गर्छन् भन्ने बुझ्न।">To comprehend how computers communicate with each other.</li>
+                </ul>
+            </div>
+            <div class="content-section" data-aos="fade-up" data-aos-delay="200">
+                <h3 data-translate="विस्तृत जानकारी:">Detailed Information:</h3>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" data-translate="नेटवर्कका प्रकारहरू:">Types of Networks:</h5>
+                        <div class="image">
+                            <img src="./images/typenet.jpg" alt="Types of Networks">
+                            <div class="image-caption" data-translate="नेटवर्कका प्रकारहरूको छवि">Image of Types of Networks</div>
+                        </div>
+                        <p class="card-text" data-translate="LAN, WAN, PAN, MAN।">LAN (Local Area Network), WAN (Wide Area Network), PAN (Personal Area Network), MAN (Metropolitan Area Network). LANs are used for small geographical areas like a single building. WANs cover larger areas, such as cities or even global connections. PANs are for individual use, typically within a range of a few meters. MANs cover city-wide areas.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" data-translate="नेटवर्क उपकरणहरू:">Network Devices:</h5>
+                        <div class="image">
+                            <img src="./images/networkd.jpg" alt="Network Devices">
+                            <div class="image-caption" data-translate="नेटवर्क उपकरणहरूको छवि">Image of Network Devices</div>
+                        </div>
+                        <p class="card-text" data-translate="राउटर, स्विचहरू, मोडेमहरू, नेटवर्क केबलहरू।">Routers, switches, modems, network cables. Routers direct traffic between different networks, switches connect multiple devices within a single network, modems modulate and demodulate signals for internet access, and network cables provide physical connections between devices.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" data-translate="आधारभूत नेटवर्किङ अवधारणाहरू:">Basic Networking Concepts:</h5>
+                        <div class="image">
+                            <img src="./images/ipad.png" alt="IP Addresses">
+                            <div class="image-caption" data-translate="IP ठेगानाहरूको छवि">Image of IP Addresses</div>
+                        </div>
+                        <p class="card-text" data-translate="IP ठेगानाहरू, MAC ठेगानाहरू, सबनेटिङ।">IP addresses, MAC addresses, subnetting. IP addresses are unique identifiers for devices on a network, enabling them to communicate. MAC addresses are hardware addresses assigned to network interfaces. Subnetting divides a network into smaller, manageable sections, improving performance and security.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tele">
+                <a class="btn btn-primary btn-lg" href="./tele.html" role="button">Telecommunication</a>
+            </div>
+
+            <div class="content-section" data-aos="fade-up" data-aos-delay="300">
+                <h3 data-translate="क्रियाकलाप:">Activity:</h3>
+                <p data-translate="नेटवर्क सेटअप: राउटर र स्विचहरू प्रयोग गरेर एउटा आधारभूत LAN सेट अप गर्नुहोस् र धेरै कम्प्युटरहरूलाई जडान गर्नुहोस्।">Network Setup: Set up a basic LAN using routers and switches, and connect multiple computers. This hands-on activity will give students practical experience in creating a network, understanding the connections, and troubleshooting basic network issues.</p>
+            </div>
+            <div class="content-section quiz" data-aos="fade-up" data-aos-delay="400">
+                <h3 data-translate="प्रश्नोत्तरी:">Quiz:</h3>
+                <div class="question">
+                    <p data-translate="LAN को मतलब के हो?">What does LAN stand for?</p>
+                    <input type="text" class="form-control" placeholder="Enter your answer">
+                </div>
+                <div class="question">
+                    <p data-translate="विभिन्न नेटवर्कहरूलाई जडान गर्न प्रयोग गरिने उपकरणको नाम के हो?">Name a device used to connect different networks.</p>
+                    <input type="text" class="form-control" placeholder="Enter your answer">
+                </div>
+                <div class="question">
+                    <p data-translate="IP ठेगाना भनेको के हो?">What is an IP address?</p>
+                    <input type="text" class="form-control" placeholder="Enter your answer">
+                </div>
+            </div>
+        </section>
+    </div>
+   
+
+    <footer class="footer text-center">
+        <div class="container">
+            <span>&copy; 2024 कम्प्युटर हार्डवेयर कार्यशाला। सबै अधिकार सुरक्षित।</span>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const translatableElements = document.querySelectorAll('[data-translate]');
+
+            translatableElements.forEach(element => {
+                const originalText = element.innerText;
+                const translatedText = element.getAttribute('data-translate');
+
+                element.addEventListener('mouseover', function() {
+                    element.innerText = translatedText;
+                    element.classList.add('translated');
+                });
+
+                element.addEventListener('mouseout', function() {
+                    element.innerText = originalText;
+                    element.classList.remove('translated');
+                });
+
+                element.addEventListener('click', function() {
+                    const isTranslated = element.classList.toggle('translated');
+                    element.innerText = isTranslated ? translatedText : originalText;
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
